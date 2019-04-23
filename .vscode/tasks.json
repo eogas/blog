@@ -1,0 +1,25 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "serve",
+            "type": "shell",
+            "command": "hexo serve -p 8080",
+            "problemMatcher": []
+        },
+        {
+            "label": "serve with drafts",
+            "type": "shell",
+            "command": "hexo serve --drafts -p 8080",
+            "problemMatcher": []
+        },
+        {
+            "label": "generate",
+            "type": "shell",
+            "command": "hexo generate",
+            "problemMatcher": []
+        }
+    ]
+}
