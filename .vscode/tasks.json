@@ -6,14 +6,18 @@
         {
             "label": "serve",
             "type": "shell",
-            "command": "hexo serve -p 8080",
+            "command": "hexo serve -p 8085",
             "problemMatcher": []
         },
         {
             "label": "serve with drafts",
             "type": "shell",
-            "command": "hexo serve --drafts -p 8080",
-            "problemMatcher": []
+            "command": "hexo serve --drafts -p 8085",
+            "problemMatcher": [],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
         },
         {
             "label": "generate",
