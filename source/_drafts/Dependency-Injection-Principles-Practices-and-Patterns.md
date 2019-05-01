@@ -22,7 +22,11 @@ No, this book kicks things off early in chapter 2 with a powerful example of a n
 
 The reason this example is so powerful is that every developer has written the tightly coupled version of this application. When you're a beginner, and for many people for the rest of your career, this is just how you write software. I'm not too proud to admit that it wasn't immediately obvious to me how the loosely coupled version should be written. This example is great, because it clearly demonstrates the goals of Inversion of Control, and how to achieve them through DI.
 
-Beyond these two chapters, the book makes constant reference to the [SOLID principles](https://en.wikipedia.org/wiki/SOLID). One might think that [Dependency Inversion](https://en.wikipedia.org/wiki/Dependency_inversion_principle) is the only principle that comes into play with DI, but this couldn't be further from the truth. As I said, this is more of an architecture book. Most of the concepts demonstrated via DI are directly applicable to maintaining one or more of the SOLID principles, and the authors never miss an opportunity to point it out.
+{% blockquote DIPPP page 67, Dependency Inversion Principle %}
+...abstractions should be owned by the module using the abstractions. In this context, "owned" means that the consuming module has control over the shape of the abstraction, and it's distributed with that module, rather than with the module that implements it. **The consuming module should be able to define the abstraction in a way that benefits itself the most.**
+{% endblockquote %}
+
+The book makes constant reference to the [SOLID principles](https://en.wikipedia.org/wiki/SOLID). One might think that [Dependency Inversion](https://en.wikipedia.org/wiki/Dependency_inversion_principle) is the only principle that comes into play with DI, but this couldn't be further from the truth. As I said, this is more of an architecture book. Most of the concepts demonstrated via DI are directly applicable to maintaining one or more of the SOLID principles, and the authors never miss an opportunity to point it out.
 
 ## DI Patterns/Anti-patterns/Code Smells
 Once the book starts diving into proper DI pattners, three important concepts are introduced:
@@ -37,10 +41,15 @@ Your composition root is a centralized location, ideally near the entry point of
 After covering DI patterns, the book moves on to what it refers to as "DI anti-patterns". This chapter title is a bit of a misnomer, because it covers both instances of DI being applied incorrectly, and coding practices that are effectively the antithesis of DI. This chapter, along with the one on code smells, seems to be a great reference for driving code reviews. Instead of saying "this is terrible code don't do this", you can say "this is considered an anti-pattern, and here's why".
 
 ## Object Lifetimes
-Lifetimes
+Before reading this book, object lifetimes were just about the point where my understanding of DI started to dwindle. And if I'm honest, I'm still a little fuzzy on this topic after finishing it. The book presents three standard liftimes for injected objects:
+
 * Singleton
 * Transient
 * Scoped
+
+Much like the types of injection, some general recommendations are given for which lifetimes to use and when. Singleton is presented as a reasonable default, at least for thread safe code. In the singleton lifetime, a concrete instance is created immediately in the composition root, and that same instance is provided to any consumer that depends on the abstraction. The authors make it very clear that a singleton lifetime is in no way the same as the singleton design pattern (or rather, anti-pattern).
+
+The use cases for the transient and scoped liftimes mostly focused on thread safety and web request scope respectively. I feel that these lifetimes weren't really covered in depth enough, especially the scoped lifetime. But perhaps I just need to go back and give that section another read to really understand it.
 
 ## Interception and AOP
 Cross cutting concerns
