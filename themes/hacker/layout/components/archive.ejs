@@ -19,6 +19,7 @@ if (page.archive){
           <time datetime="<%= item.date.toDate().toISOString() %>">
             <a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a>
           </time>
+          <span class="reading-time"><%- readingTime(item.content) %></span>
           <% if (item.link){ %>
             <% if (item.title){ %>
             <h3 class="archive-title"><a href="<%- item.link %>" target="_blank"><span><%= item.title %></span></a></h3>

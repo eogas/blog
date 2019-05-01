@@ -14,6 +14,7 @@
     <% } %>
   <% } %>
 
+  <% if (item.title != 'about'){ %>
   <div class="article-top-meta">
     <span class="posted-on">
       <a href="<%- config.root %><%- item.path %>" rel="bookmark">
@@ -22,7 +23,9 @@
         </time>
       </a>
     </span>
+    <span class="reading-time"><%- readingTime(item.content) %></span>
   </div>
+  <% } %>
 
 
   <% if (item.photos && item.photos.length){ %>
