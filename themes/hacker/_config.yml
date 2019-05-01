@@ -1,0 +1,17 @@
+menu:
+  home: /
+  archives: /archives
+  about: /about
+
+language: default
+
+# duoshuo comment
+duoshuo: false
+duoshuo_name: 
+
+# disqus comment
+disqus: false
+disqus_shortname: 
+
+# google analytics
+googleTrackId: UA-78733689-1
