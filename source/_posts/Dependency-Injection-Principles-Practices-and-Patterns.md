@@ -1,7 +1,12 @@
 ---
 title: 'Dependency Injection Principles, Practices, and Patterns'
-tags: ['code', 'architecture', '.NET']
+tags:
+  - code
+  - architecture
+  - .NET
+date: 2019-05-06 09:41:18
 ---
+
 I recently finished reading the book *[Dependency Injection Principles, Practices, and Patterns](https://www.manning.com/books/dependency-injection-principles-practices-patterns)* by [Mark Seemann](https://blog.ploeh.dk/) and [Steven van Deursen](https://blogs.cuttingedge.it/steven/). This is technically the 2nd edition of *[Dependency Injection in .NET](https://www.manning.com/books/dependency-injection-in-dot-net)*, but the title was changed to reflect less of a focus on .NET. This post will be a rough overview of the book, and what I got out of it.
 
 ## Core Concepts: Pure DI and Volatile Dependencies
