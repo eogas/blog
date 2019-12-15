@@ -1,6 +1,6 @@
 ---
 title: One Year of (Slightly) Healthier Eating
-tags: [health, food]
+tags: [health, food, lifestyle]
 ---
 This will be a two-part post, with the first and second parts being written one year apart. Today's date is Saturday, May 11th, 2019, and it is the weekend following my 30th birthday.
 
