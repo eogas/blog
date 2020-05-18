@@ -37,7 +37,7 @@ Once the book starts diving into proper DI patterns, four important concepts are
 * Method Injection
 * Property Injection
 
-Your composition root is a centralized location, ideally near the entry point of the application, where the entire dependency graph is defined. This is a fundamental feature of DI. The other three concepts are different ways to provide a dependency to a consumer. The book makes it clear that Constructor Injection is preferred over the other techniques. Unless there is a good reason why it cannot be used, the authors make clear that Constructor Injection should be used by default whenever possible.
+Your composition root is a centralized location, ideally near the entry point of the application, where the entire dependency graph is defined. This is a fundamental feature of DI. The other three concepts are different ways to provide a dependency to a consumer. Constructor Injection seems to be preferred over the other injection techniques. Unless there is a good reason why it cannot be used, the authors make clear that Constructor Injection should be used by default whenever possible.
 
 After covering DI patterns, the book moves on to what it refers to as "DI anti-patterns". This chapter title is a bit of a misnomer, because it covers both instances of DI being applied incorrectly, and coding practices that are effectively the antithesis of DI.
 
