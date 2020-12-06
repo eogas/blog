@@ -12,3 +12,5 @@ Apparently the thing to do in 2020 while we're all cooped up inside is to learn 
 I ordered a few bags of flour, looked up a couple of [recipes on the King Arthur website](https://www.kingarthurbaking.com/recipes/the-easiest-loaf-of-bread-youll-ever-bake-recipe), and eventually I was able to make something that resembles a legit loaf of bread. Check it out!
 
 {% img img-border-6 /images/quarantine-bread.jpg %}
+
+[Now Now - The Pull](https://www.youtube.com/watch?v=lI_pjy3pjI8)
