@@ -1,9 +1,11 @@
 ---
 title: Quarantine Bread
 tags:
-- bread
-- covid-19
+  - bread
+  - covid-19
+date: 2020-12-06 02:39:31
 ---
+
 
 Apparently the thing to do in 2020 while we're all cooped up inside is to learn how to bake bread. Now that the initial run on bread flour has tempered a bit, I decided to give it a try.
 
