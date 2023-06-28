@@ -13,7 +13,7 @@ This turns out to be relatively simple to do with ASP.NET middleware.
 # The Frontend
 For this technique, there's nothing special to do in the frontend. Here's an example of a rudimentary loading indicator, taken from the [dotnet-cli React template](https://docs.microsoft.com/en-us/aspnet/core/client-side/spa/react?view=aspnetcore-5.0&tabs=visual-studio):
 
-```
+``` lang:jsx
     render() {
         let contents = this.state.loading
             ? <p><em>Loading...</em></p>
